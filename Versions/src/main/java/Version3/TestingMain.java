@@ -17,7 +17,7 @@ public class TestingMain {
         
         Scanner sc = new Scanner(System.in);  
         EmployeeRoster employees = new EmployeeRoster();
-         int ch;
+         int ed;
            
     
     do{
@@ -26,33 +26,33 @@ public class TestingMain {
         System.out.println("\n ***Employee's Details***");  
         System.out.println("1. Display all Hourly Employee and Total Number \n 2. Display all Commission Employees and Total Number \n 3. Display all BasePlusCommission Employees and Total Number \n 4.Display Piece Worker Employees and Total Number \n 5.Display All Employees \n 6.Exit ");  
         System.out.println("Enter your choice: ");  
-        ch = sc.nextInt();
-      if (ch==1){
+        ed = sc.nextInt();
+      if (ed==1){
             System.out.println("\n" + "Hourly Employees:");
             System.out.println(employees.DisplayHourlyEmployee());
             System.out.println("Total count of HourlyEmployees:" + employees.getCountHourlyEmployee());
         
         }
-        else if (ch==2){
+        else if (ed==2){
             System.out.println("\n" + "Commission Employees:");
             System.out.println(employees.DisplayCommissionEmployee());
             System.out.println("Total count of CommissionEmployees:" + employees.getCountCommissionEmployee());
             
         }
-        else if (ch==3){
+        else if (ed==3){
                 
              System.out.println("\n" + "BasePlusCommission Employees:");
              System.out.println(employees.DisplayBasePlusCommissionEmployee());
              System.out.println("Total count of BasePlusCommissionEmployees:" + employees.getCountBasePlusCommissionEmployee());
         }
-        else if (ch==4){
+        else if (ed==4){
             System.out.println("\n" + "Piece Worker Employees:");
             System.out.println(employees.DisplayPieceWorkerEmployee());
             System.out.println("Total count of PieceWorkerEmployees:" + employees.getCountPieceWorkerEmployee());
             
             
         }
-        else if(ch==5){
+        else if(ed==5){
             int totalCount = employees.getCountHourlyEmployee();    
             int totalCount1 = employees.getCountCommissionEmployee();
             int totalCount2 = employees.getCountBasePlusCommissionEmployee();
@@ -78,7 +78,7 @@ public class TestingMain {
         }
         
     }
-      while(ch!=6);
+      while(ed!=6);
            
       
         

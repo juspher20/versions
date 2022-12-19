@@ -15,16 +15,7 @@ public class V3TMain {
     public static void main(String[] args) {
         EmployeeRooster er = new EmployeeRooster();
           er.CountHourlyEmployee();
-//        er.CountCommissionEmployee();
-//        er.CountBasePlusCommissionEmployee();
-//        er.PieceWorkerEmployee();
-//        er.DisplayAllEmployee();
           er.DisplayHE();
-//        er.DisplayCE();
-//        er.DisplayBPCE();
-//        er.DisplayPWE();
-//        er.removeEmployee();
-//        er.addEmployee();
 
     }
 
